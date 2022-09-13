@@ -1,5 +1,3 @@
-#include <stdio.h>
-#ifndef _MAIN
 #define _MAIN
 
 /**
@@ -19,6 +17,11 @@ void print_putchar(void)
 	putchar('\n');
 }
 
+/**
+* print_alphabet - print all the char in _putchar
+*
+* Return: char
+*/
 void print_alphabet(void)
 {
 	int i;
