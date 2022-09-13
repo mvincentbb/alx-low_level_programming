@@ -1,3 +1,4 @@
+#include <stdio.h>
 #ifndef _MAIN
 #define _MAIN
 
@@ -26,6 +27,6 @@ void print_alphabet(void)
 	{
 		putchar(i);
 	}
-	putchar('\n')
+	putchar('\n');
 }
 #endif
