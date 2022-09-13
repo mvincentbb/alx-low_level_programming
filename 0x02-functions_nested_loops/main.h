@@ -16,6 +16,5 @@ void print_putchar(void)
 		putchar(to_print[i]);
 	}
 	putchar('\n');
-	return (0);
 }
 #endif
