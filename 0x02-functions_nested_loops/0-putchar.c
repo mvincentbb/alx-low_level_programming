@@ -1,17 +1,19 @@
-#include <stdio.h>
 #include "main.h"
 /**
 * main - print _putchar
 *
 * Return: Always 0
 */
-int _putchar(void)
+int main(void)
 {
-	int ch[8] = "_putchar";
-	
-	for(int i = 0; i < 8; i++)
+	char ch[8] = "_putchar";
+	char c;
+	int i;
+
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(ch[i]);
+		c = ch[i];
+		_putchar(c);
 	}
 	_putchar('\n');
 	return (0);

@@ -1,13 +1,5 @@
-#ifndef _MAIN
-#define _MAIN
 
-/**
-* print_putchar - print all the char in _putchar
-*
-* Return: char
-*/
-void _putchar(void)
+int _putchar(char c);
 
-void print_alphabet(void)
+void print_alphabet(void);
 
-#endif
