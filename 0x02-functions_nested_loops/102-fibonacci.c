@@ -19,4 +19,5 @@ int main(void)
 		res = prev + next;
 	}
 	printf("\n");
+	returnt (0);
 }
