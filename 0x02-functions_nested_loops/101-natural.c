@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
 * natural_numbers - mutiple of 3 or 5
 *
