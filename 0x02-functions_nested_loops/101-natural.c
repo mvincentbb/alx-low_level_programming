@@ -7,16 +7,17 @@
 *
 * Return: Always 0
 */
-void natural_number(int n)
+int main(void)
 {
 	int i, sum;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < 1024; i++)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
 		{
 			sum += i;
 		}
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
+	return (0);
 }
