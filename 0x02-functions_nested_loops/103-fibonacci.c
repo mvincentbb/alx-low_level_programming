@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	long sum, i, prev, next, res;
+	long sum, prev, next, res;
 
 	prev = 1;
 	next = prev + 1;
