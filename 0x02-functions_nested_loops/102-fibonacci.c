@@ -12,17 +12,17 @@ int main(void)
 	next = prev + 1;
 	res = next + prev;
 	printf("%ld, %ld, %ld, ", prev, next, res);
-	for (i = 1; i < 50; i++)
+	for (i = 1; i < 48; i++)
 	{
-		if (i == 49)
+		prev = next;
+		next = res;
+		res = prev + next;
+		if (i == 47)
 		{
 			printf("%ld\n", res);
 		}
 		else
 		{
-		prev = next;
-		next = res;
-		res = prev + next;
 		printf("%ld, ", res);
 		}
 	}
