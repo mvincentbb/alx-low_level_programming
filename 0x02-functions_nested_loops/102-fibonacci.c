@@ -8,7 +8,7 @@ int main(void)
 {
 	long i, prev, next, res;
 
-	prev = 0;
+	prev = 1;
 	next = prev + 1;
 	res = next + prev;
 	printf("%ld, %ld, %ld, ", prev, next, res);
