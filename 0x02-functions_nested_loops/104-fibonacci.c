@@ -6,7 +6,8 @@
 */
 int main(void)
 {
-	double i, prev, next, res;
+	double prev, next, res;
+	int i;
 
 	prev = 1;
 	next = prev + 1;
