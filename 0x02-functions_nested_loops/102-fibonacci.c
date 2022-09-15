@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
 * main - entry point
 *
@@ -6,18 +6,25 @@
 */
 int main(void)
 {
-	int prev, next, res;
+	long i, prev, next, res;
 
 	prev = 0;
 	next = prev + 1;
 	res = next + prev;
-	for (i = 1; i < 16; i++)
+	printf("%ld, %ld, %ld, ", prev, next, res);
+	for (i = 1; i < 50; i++)
 	{
-		printf("%d, %d, %d", prev, next, res);
+		if (i == 49)
+		{
+			printf("%ld\n", res);
+		}
+		else
+		{
 		prev = next;
 		next = res;
 		res = prev + next;
+		printf("%ld, ", res);
+		}
 	}
-	printf("\n");
-	returnt (0);
+	return (0);
 }
