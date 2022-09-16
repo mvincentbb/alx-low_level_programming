@@ -3,6 +3,8 @@
 /**
  * print_line - pl
  *
+ * @n: integer
+ *
  * Return: Always 0.
  */
 
