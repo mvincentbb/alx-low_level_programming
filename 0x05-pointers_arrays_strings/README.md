@@ -1,0 +1,1 @@
+New project to learn pointers and array
