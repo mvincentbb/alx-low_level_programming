@@ -5,12 +5,12 @@
 * _strchr - function that locates a character in a string
 * @s: char
 * @c: char
+* Return: char
 */
 char *_strchr(char *s, char c)
 {
 	int j, i, str;
 	char *si = "";
-	
 
 	str = strlen(s);
 	for (i = 0; i < str; i++)
@@ -20,7 +20,7 @@ char *_strchr(char *s, char c)
 
 			for (j = 0; j < str - i; j++)
 			{
-				si[j] = s[j+i];
+				si[j] = s[j + i];
 			}
 			break;
 		}
