@@ -16,14 +16,7 @@ char *_strchr(char *s, char c)
 	for (i = 0; i < str; i++)
 	{
 		if (c == s[i])
-		{
-
-			for (j = 0; j < str - i; j++)
-			{
-				si[j] = s[j + i];
-			}
-			break;
-		}
+			return (s + i);
 	}
-	return (si);
+	return (0);
 }
