@@ -9,7 +9,7 @@ void _print_rev_recursion(char *s)
 {
 	char t;
 
-	if (*s != 0)
+	if (*s != '\0')
 	{
 		t = s[0];
 		s = (s + 1);
