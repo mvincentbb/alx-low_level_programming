@@ -32,13 +32,12 @@ int check_palindrome(int l, int r, char *p)
 		return (check_palindrome(l + 1, r - 1, p));
 }
 /**
-* int is_palindrome - function that returns 1 or 0
+* is_palindrome - function that returns 1 or 0
 *
 * @s: char
 *
 * Return: 1 if palindrome 0 if not
 */
-
 int is_palindrome(char *s)
 {
 	int i;
