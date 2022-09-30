@@ -4,7 +4,9 @@
 /**
 * main - program that prints its name, followed by a new line.
 *
-* Return : Always 0
+* @argc: argument count
+* @argv: argument vector
+* Return: Always 0
 */
 
 int main(int argc, char *argv[])
