@@ -1,33 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
-* main - program that prints all arguments it receives.
-* @argc: argument count
-* @argv: argument vector
-* Return: Always 0
-*/
-
+ * main - adds numbers
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: 0 if no errors, else 1
+ */
 int main(int argc, char *argv[])
 {
-	int sum, i;
+	int a = 0, i, j;
 
-	if (argv && argc == 1)
-		printf("%d\n", 0);
-	else
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j]; j++)
 		{
-			if (!(atoi(argv[i]) == 0))
-				sum += atoi(argv[i]);
-			else
+			if (isdigit(argv[i][j]) == 0)
 			{
-				printf("Error\n");
+				puts("Error");
 				return (1);
 			}
 		}
-		if (i == argc)
-			printf("%d\n", sum);
 	}
+	for (i = 1; i < argc; i++)
+	{
+		a += atoi(argv[i]);
+	}
+	printf("%d\n", a);
 	return (0);
 }
+
