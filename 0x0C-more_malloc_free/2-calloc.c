@@ -16,11 +16,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	n = nmemb * size;
+	n = nmemb * size + 1;
 	p = malloc(n);
 	if (p == NULL)
 		return (NULL);
-	for (i = 0; i <= n; i++)
+	for (i = 0; i < n; i++)
 	{
 		p[i] = '\0';
 	}
