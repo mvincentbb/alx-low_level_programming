@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* array_range -function that creates an array of integers 
+* array_range -function that creates an array of integers
 *
 * @min: min int of the array
 * @max: max int of the array
@@ -25,5 +25,5 @@ int *array_range(int min, int max)
 		arr[i] = min + i;
 	}
 	arr[n] = '\0';
-	return arr;
+	return (arr);
 }
