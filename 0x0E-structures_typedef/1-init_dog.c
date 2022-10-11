@@ -1,6 +1,6 @@
 #include "dog.h"
 /**
-* init_long -  function that initialize a variable of type struct dog
+* init_dog -  function that initialize a variable of type struct dog
 *
 * @d: dog you want to creaate
 * @name: name of the dog
