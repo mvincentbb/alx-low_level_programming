@@ -1,0 +1,1 @@
+practice fonction pointer
